@@ -22,7 +22,7 @@ namespace CreditDataBl
                 wb.SaveAs(Filename: altXLSXPath, FileFormat: Microsoft.Office.Interop.Excel.XlFileFormat.xlOpenXMLWorkbook);
                 wb.Close();
                 app.Quit();
-                return ReadFromXLSX(inputPath, sheetName);
+                return ReadFromXLSX(altXLSXPath, sheetName);
             }
             return ReadFromXLSX(inputPath, sheetName);
         }
