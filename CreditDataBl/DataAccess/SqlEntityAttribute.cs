@@ -19,5 +19,6 @@ namespace CreditDataBl
         public string FieldName { get; set; }
         public SqlDbType FieldDbType { get; set; }
         public bool Identity { get; set; }
+        public bool Nullable { get; set; }
     }
 }

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditDataBl", "CreditDataBl\CreditDataBl.csproj", "{37E0A92C-6C9A-433C-87EE-F919666EE3A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditDataBl_Tester", "CreditDataBl_Tester\CreditDataBl_Tester.csproj", "{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{37E0A92C-6C9A-433C-87EE-F919666EE3A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37E0A92C-6C9A-433C-87EE-F919666EE3A6}.Release|x86.ActiveCfg = Release|x86
 		{37E0A92C-6C9A-433C-87EE-F919666EE3A6}.Release|x86.Build.0 = Release|x86
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Debug|x86.Build.0 = Debug|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Release|x86.ActiveCfg = Release|Any CPU
+		{45A6B0E4-8E6D-47B7-A41A-85E72878D56C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

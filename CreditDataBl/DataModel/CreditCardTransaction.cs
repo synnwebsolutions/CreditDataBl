@@ -21,7 +21,7 @@ namespace CreditDataBl
         public DateTime TransactionDate { get; set; }
 
         [DataNames("שם בית העסק")]
-        [SqlField()]
+        [SqlField(Nullable = true, FieldDbType = System.Data.SqlDbType.VarChar)]
         public string BussinessName { get; set; }
 
         [DataNames("סכום העסקה")]
@@ -33,7 +33,7 @@ namespace CreditDataBl
         public decimal TransactionDebitAmount { get; set; }
 
         [DataNames("פירוט נוסף")]
-        [SqlField(FieldDbType = System.Data.SqlDbType.VarChar)]
+        [SqlField(FieldDbType = System.Data.SqlDbType.VarChar, Nullable = true)]
         public string TransactionDetails { get; set; }
         public bool Valid
         {

@@ -44,7 +44,7 @@ namespace CreditDataBl
                                                 .Where(x => x.GetCustomAttributes(typeof(DataNamesAttribute), true).Any())
                                                 .ToList();
 
-            PropertyMapHelper.ValidateColumnsMatch(typeof(TEntity), table, properties);
+            //PropertyMapHelper.ValidateColumnsMatch(typeof(TEntity), table, properties);
 
             //Step 3 - Map the data
             List<TEntity> entities = new List<TEntity>();
@@ -126,7 +126,7 @@ namespace CreditDataBl
                     var propertyValue = row[columnName];
                     if (propertyValue != DBNull.Value)
                     {
-                        ParsePrimitive(prop, entity, row[columnName]);
+                        ParsePrimitive(prop, entity, propertyValue);
                         break;
                     }
                 }
@@ -180,7 +180,8 @@ namespace CreditDataBl
                 {
                     try
                     {
-                        prop.SetValue(entity, DateTime.Parse(value.ToString()), null);
+                        var dateVal = DateTime.Parse(value.ToString());
+                        prop.SetValue(entity, dateVal, null); 
                     }
                     catch (Exception ex)
                     {

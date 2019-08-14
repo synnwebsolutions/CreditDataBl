@@ -20,7 +20,7 @@ namespace CreditDataBl
                 var month = int.Parse(val[1]);
                 var day = int.Parse(val[0]);
 
-                dt = new DateTime(year >= 60 ? 1900 + year : 2000 + year, month, day);
+                dt = new DateTime(year, month, day);
             }
             catch (Exception ex)
             {
